@@ -12,7 +12,7 @@ const Jorge = () => {
     const newStack : stack = {frontend: ['Html','Css','Js','Ract'], backend: ['Node', 'Express'], db:'MongoDB'}
   return (
     <>
-     <div>Me llamo {nombre}, tengo {edad} años, estoy estudiando en CEI. Como front-end: {newStack.frontend}, como back-end: {newStack.backend} y la DB que usamos es {newStack.db}</div>
+     <div>Me llamo {nombre}, tengo {edad} años, estoy estudiando en CEI. Como front-end: {newStack.frontend.join(', ')}, como back-end: {newStack.backend.join(', ')} y la DB que usamos es {newStack.db}</div>
     </>
   )
 }
